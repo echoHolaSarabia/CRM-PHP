@@ -1,0 +1,108 @@
+.iContRoTador{width:370px;border:1px solid #e5e5e5;margin:0 0 10px;padding:4px}
+.iBckTitRotador{background:url(../img/bckTitRotador.jpg) no-repeat;border-bottom:1px solid #FFF;height:26px;margin:0 0 4px;width:370px}
+.iTxtTitRotador a:hover{color:#f60;text-decoration:none}
+.itxtRoTador{background:url(../img/bckTxtRotador.jpg) repeat-y;font:700 12px Arial, Helvetica, sans-serif;color:#6d6e71;border-top:1px solid #FFF;margin:4px 0 0;padding:10px}
+.itxtRoTador a:hover{color:#454d58;text-decoration:none}
+.iTxtTit2{height:21px;font:700 10px Arial, Helvetica, sans-serif;color:#7e7c70;text-transform:uppercase;float:left;padding:5px 0 0 5px}
+.iTxtTit2 a:hover{color:#555346;text-decoration:none}
+.iRenglonMasA{height:20px;font:12px Arial, Helvetica, sans-serif;color:#636363;background:url(../img/bckRenglonA.jpg) no-repeat;padding:5px 0 0 5px}
+.iRenglonMasB{height:20px;font:12px Arial, Helvetica, sans-serif;color:#636363;background:url(../img/bckRenglonB.jpg) no-repeat;padding:5px 0 0 5px}
+.iOpinion01{width:226px;height:78px;background:url(../img/bckOpinion01.jpg) top no-repeat #596167;padding:5px 0 0 4px}
+.iOpinionImg{border:1px solid #ebebeb;float:left;background:#f89825;margin:0 5px 0 0;padding:1px}
+.iOpinionImg img{border:1px solid #fefefe}
+.iOpinionT1{font:700 10px Arial, Helvetica, sans-serif;color:#636363;text-transform:uppercase;padding-top:0}
+.iOpinionT2{font:700 12px Arial, Helvetica, sans-serif;color:#FFF;padding-top:8px}
+.iOpinionT3{font:11px Arial, Helvetica, sans-serif;color:#FFF;padding-top:5px}
+.iContBuscador{width:300px;height:30px;border:1px solid #e5e5e5;margin:0 0 10px;padding:4px}
+.iBuscar{width:279px;height:30px;background:url(../img/bckBuscador.jpg) top no-repeat;float:left}
+.iBuscar input{border:none;background:transparent;width:185px;height:12px;font-size:10px;font-family:Arial,Tahoma,Verdana;margin:7px 0 0 85px}
+.iContDest02{width:977px;background:#596167;float:left;border:1px solid #FFF;padding:5px}
+.iDest02L{width:470px;background:#FFF;border:1px solid #e5e5e5;float:left;margin-right:8px;padding:4px}
+.iDest02{width:470px;background:#FFF;border:1px solid #e5e5e5;float:left;padding:4px}
+.iBckTitDest02{width:470px;height:26px;background:url(../img/bckTitDest02.jpg) no-repeat;border-bottom:1px solid #FFF}
+.iImgDest02{width:132px;height:135px;background:#596167;float:left;overflow:hidden;padding:10px}
+.iImgDest02 img{background:#FFF;border:1px solid #7f7f7f;max-height:135px;padding:1px}
+.iBtnDestA a{width:307px;height:21px;display:inline;float:left;background:url(../img/bckBtnDest02a.gif) no-repeat;color:#636363;text-decoration:none;padding:5px 0 0 10px}
+.iBtnDestAA a{width:307px;height:21px;display:inline;float:left;background:url(../img/bckBtnDest02a.gif) no-repeat;background-position:0 -26px;color:#FFF;text-decoration:none;padding:5px 0 0 10px}
+.iBtnDestB a{width:307px;height:21px;display:inline;float:left;background:url(../img/bckBtnDest02b.gif) no-repeat;color:#636363;text-decoration:none;padding:5px 0 0 10px}
+.iContModulo01{width:990px;background:url(../img/bckModulo.gif) top repeat-y;margin-top:10px;float:left}
+.iModulo01L{width:390px;float:left;padding:0 0 0 10px}
+.iModulo01LTit{font:22px Georgia, "Times New Roman", Times, serif;color:#4b6f8a;padding-top:10px}
+.iModulo01LTit a{color:#4b6f8a;text-decoration:none}
+.iModulo01LTit a:hover{color:#2d4f69;text-decoration:none}
+
+.iModulo01LTitH{font:22px Georgia, "Times New Roman", Times, serif;color:#4b6f8a;margin: 0;}
+.iModulo01LTitH a{color:#4b6f8a;text-decoration:none}
+.iModulo01LTitH a:hover{color:#2d4f69;text-decoration:none}
+
+.iPunteado01{height:1px;background:url(../img/Punteado01.gif) repeat-x;font-size:0;width:380px;margin:10px 0}
+.iModulo01C{width:240px;float:left;padding:0 10px}
+.iModulo01CTit{font:20px Georgia, "Times New Roman", Times, serif;padding-top:10px}
+.iModulo01CTit a{color:#4B6F8A;text-decoration:none}
+.iModulo01CTit a:hover{color:#2D4F69;text-decoration:none}
+
+.iModulo01CTitH{font:20px Georgia, "Times New Roman", Times, serif; margin:0;}
+.iModulo01CTitH a{color:#4B6F8A;text-decoration:none}
+.iModulo01CTitH a:hover{color:#2D4F69;text-decoration:none}
+
+.iPunteado02{background:url(../img/Punteado01.gif) repeat-x;font-size:0;height:1px;margin:5px 0 10px;width:240px}
+.iModulo01R{width:320px;float:left;padding:0 0 0 10px}
+.iDest01L{width:175px;border:1px solid #e5e5e5;float:left;margin:0 10px 15px 0;padding:4px}
+.iDest01{width:175px;border:1px solid #e5e5e5;float:left;margin:0 0 15px;padding:4px}
+.iDest01Bck{background:url(../img/bckDest01.gif) top repeat-y;padding:5px 10px}
+.iDest01Bck img{border:1px solid #9ba0a4;padding:1px}
+.iContActualidad{width:980px;float:left;margin:20px 0 0;padding:0 0 0 10px; margin-bottom:10px;}
+.iActualidad{width:960px;background:#596167;float:left;padding:0 0 20px 10px}
+.iActualidad01{width:228px;float:left;margin:0 12px 0 0}
+.iActualidad01 img{border:4px solid #FFF}
+.iActTxt{font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#FFF;padding-top:5px}
+.iActCom{font-family:Arial, Helvetica, sans-serif;font-size:10px;color:#FFF;text-transform:uppercase;padding-top:5px;font-weight:700}
+.iActCom a:hover{color:#acb0b3;text-decoration:none}
+.ibanner02{width:980px;height:110px;float:left;padding:10px 0 0 10px}
+.ibanner02 img{margin:0 4px 0 0}
+.iPunteado03{height:1px;background:url(../img/Punteado01.gif) repeat-x;font-size:0;width:970px;float:left;margin:10px 0 10px 10px}
+.iContExtras{width:970px;margin:0 0 25px}
+.iContPart03{width:300px;border:1px solid #e5e5e5;float:left;margin:0 0 10px;padding:2px}
+.iBckTitPart{width:300px;height:26px;background:url(../img/bckTitRotador.jpg) right no-repeat;border-bottom:1px solid #FFF}
+.iVerMas{float:right;font:700 10px Arial, Helvetica, sans-serif;color:#7e7c70;text-transform:uppercase;padding:5px 5px 0 0}
+.iVerMas a:hover{color:#545246;text-decoration:none}
+.iPart02{width:280px;height:74px;background:url(../img/bckRenglonPartA.jpg) top no-repeat #FFF;padding:10px 10px 0}
+.iPart02Blog{width:400px;height:74px;padding:10px;text-align: left;margin:25px;}
+.iPartImg{float:left;margin:0 5px 0 0}
+.iPartImgBlog{float:left;margin:0 5px 0 0;width:140px; height:75px}
+.iPartImg img{border:1px solid #e4e5e5;padding:4px}
+.iPartT1{font:700 10px Arial, Helvetica, sans-serif;color:#f26522;text-transform:uppercase;padding-top:0}
+.iPartT2{font:700 14px Arial, Helvetica, sans-serif;color:#596167;padding-top:8px}
+.iPartT3 img{float:left;margin-right:5px}
+.iPartT3{font: 11px Arial, Helvetica, sans-serif;color:#596167;padding-top:5px}
+.iPart03{width:280px;height:74px;background:url(../img/bckRenglonPartB.jpg) top no-repeat #FFF;padding:10px 10px 0}
+.iPart01{width:280px;background:url(../img/bckRenglonPartB.jpg) bottom no-repeat #FFF;padding:10px 10px 0}
+.iPartT1b{width:250px;font:700 10px Arial, Helvetica, sans-serif;color:#808285;text-transform:uppercase;padding-top:0;float:left}
+.iPartT1bimg{float:right}
+.iPartT2b{font:700 14px Arial, Helvetica, sans-serif;color:#596167;padding-top:0}
+.iTxtTitRotador,.iTxtTitPart{height:21px;font:700 10px Arial, Helvetica, sans-serif;color:#FFF;text-transform:uppercase;float:left;background:url(../img/bckNumeroRotador.jpg) no-repeat;padding:5px 0 0 5px}
+.iTxtTitRotador a,.iDest01Tit a,.iActTit a,.iActCom a{color:#FFF;text-decoration:none}
+.iPuntaRotador,.iPuntaMas,.iPuntaOpinion,.iPuntaDest02,.iCuerpoDest02,.iPuntaPart{float:left}
+.itxtRoTador a,.iModulo01LCom a,.iModulo01CCom a{color:#848c97;text-decoration:none}
+.iContMas,.iContOpinion{width:230px;border:1px solid #e5e5e5;margin:0 0 10px;padding:4px}
+.iBckTitMas,.iBckTitOpinion{width:230px;height:26px;background:url(../img/bckTitOpinion.jpg) no-repeat;border-bottom:1px solid #FFF}
+.iTxtTitMas,.iTxtTitOpinion,.iTxtTitDest02{height:21px;font-family:Arial, Helvetica, sans-serif;font-size:10px;color:#FFF;font-weight:700;text-transform:uppercase;float:left;background:url(../img/bckTxtIncludes.jpg) no-repeat;padding:5px 0 0 5px}
+.iTxtTit2 a,.iVerMas a{color:#7e7c70;text-decoration:none}
+.iRenglonMasA img,.iRenglonMasB img{float:left;margin:0 5px}
+.iRenglonMasA a,.iRenglonMasB a{color:#636363;text-decoration:none}
+.iRenglonMasA a:hover,.iRenglonMasB a:hover{color:#3a3a3a;text-decoration:none}
+.iBtnDestA,.iBtnDestAA,.iBtnDestB{float:left;font:12px Arial, Helvetica, sans-serif}
+.iBtnDestA a:hover,.iBtnDestB a:hover{background-position:0 -26px;color:#FFF;text-decoration:none}
+.iModulo01LTit01,.iModulo01CTit01{color:#596167;font:10px Arial, Helvetica, sans-serif}
+.iModulo01LTit01 strong,.iModulo01CTit01 strong{text-transform:uppercase}
+.iModulo01Cimg{text-align:center}
+.iModulo01Limg img,.iModulo01Cimg img{border:1px solid #e5e5e5;padding:4px}
+.iModulo01LTxt,.iModulo01CTxt{font:12px Arial, Helvetica, sans-serif;color:#636363;padding-top:10px}
+.iModulo01LCom,.iModulo01CCom{font:700 10px Arial, Helvetica, sans-serif;color:#848c97;padding-top:10px}
+.iModulo01LCom a:hover,.iModulo01CCom a:hover{color:#5d636b;text-decoration:none}
+.iDest01Tit01,.iActTit01{font:10px Arial, Helvetica, sans-serif;color:#c2defd;text-transform:uppercase;padding-top:5px}
+.iDest01Tit,.iActTit{font:22px Georgia, "Times New Roman", Times, serif;color:#FFF;padding-top:5px}
+.iDest01Tit a:hover,.iActTit a:hover{color:#bdc0c2;text-decoration:none}
+.iContPart01,.iContPart02{width:300px;border:1px solid #e5e5e5;float:left;margin:0 20px 10px 0;padding:2px}
+.iPartT2 a,.iPartT2b a{color:#596167;text-decoration:none}
+.iPartT2 a:hover,.iPartT2b a:hover{color:#373f44;text-decoration:none}

@@ -1,0 +1,35 @@
+.eContModulo02{ width:990px;background:url(../img/bckModulo2.gif) top repeat-y; margin-top:10px; float:left;}
+.eContLeft{ width:660px; float:left;}
+
+.eUpampliar{ float:left;padding:0 10px 0 10px;}
+.eTamanoTexto{float:left;padding:1px 4px 0 0}
+.eTamanoLetra{float:right;padding:0 0 9px 0;font-family:Arial,Tahoma,Verdana;font-size:10px;color:#f26522;font-weight:bold}
+
+.ePunteado02{height:1px;background-image:url(../img/Punteado01.gif);background-repeat:repeat-x;font-size:0px; width:639px; margin:5px 0 10px 0; float:left;}
+.ePunteado03{height:1px;background-image:url(../img/Punteado01.gif);background-repeat:repeat-x;font-size:0px; width:639px; margin:0px 0 5px 0; float:left;}
+.eModuloDestacado{ padding:0 10px 0 10px;}
+.eTitulo{font-family: Georgia, "Times New Roman", Times, serif;color:#4b6f8a;padding:0 0 10px 0; font-size:38px;}
+.eContTitulo{ padding:0 10px 0 10px;}
+
+.eTitulo1,.eTitulo2,.eTitulo3,.eTitulo4{font-family: Georgia, "Times New Roman", Times, serif;color:#4b6f8a;padding:0 0 10px 0;}
+.eTitulo1{font-size:18px}
+.eTitulo2{font-size:22px}
+.eTitulo3{font-size:26px}
+.eTitulo4{font-size:30px}
+
+
+.eContenedorResultados{font-family:Arial,Tahoma,Verdana;color:#3c3c3c;font-size:14px;}
+.eTextosEncuesta{float:left;font-family:Arial,Tahoma,Verdana;color:#3c3c3c;}
+.eBarraResultados{float:left;font-size:0;border:1px solid #b5b5b5;padding:1px;height:12px;width:420px; margin:0 10px 0 0;}
+.eBarraAzul{height:12px;background-color:#4b6f8a;}
+.eBarraNar{height:12px;background-color:#f26522;}
+.eResultados{float:left;}
+.eContEn{width:480px; float:right;}
+
+
+.eTitMas{font-family: Georgia, "Times New Roman", Times, serif;color:#f26522;padding:20px 0 20px 0; font-size:18px;}
+.eNoticiasRelacionadas{font-family:Arial,Tahoma,Verdana;color:#4b6f8a; font-size:12px;}
+.eNoticiasRelacionadas a{color:#4b6f8a; text-decoration:none}
+.eNoticiasRelacionadas a:hover{color:#2d475b; text-decoration:none}
+.eNoticiasRelacionadas img{ float:left; margin:0 10px 0 0;}
+

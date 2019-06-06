@@ -1,0 +1,45 @@
+.cuadro_ficheros{
+/*border:1px #000000 solid;*/
+padding:10px;
+height:400px;
+}
+
+#cuadro {
+text-align:center;
+float:left;
+background-color:#F9F9F9;
+border:1px solid #999999;
+margin:1px 1px 1px 1px;
+font-size:9px;
+text-decoration:none;
+}
+#cuadro div.imagen {
+width:70px;
+height:60px;
+}
+
+#cuadro div.imagen a{
+color:#333333;
+}
+
+#cuadro div.imagen a:hover {
+color:#888888;
+}
+
+#cuadro div.imagen span {
+display:block;
+padding-top:7px;
+}
+
+#cuadro div.imagen img {
+margin-top:10px;
+}
+
+#cuadro div.acciones{
+width:68px;
+height:30px;
+font-size:10px;
+background-color:#a8a7a7;
+border:1px solid #828282;
+color:#333333;
+}

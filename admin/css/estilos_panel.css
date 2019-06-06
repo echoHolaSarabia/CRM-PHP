@@ -1,0 +1,31 @@
+#cpanel {
+text-align:center;
+}
+
+#cpanel div.recuadro a{
+width:100px;
+height:100px;
+background-color:#F9F9F9;
+float:left;
+border:1px solid #000000;
+margin:1px 1px 1px 1px;
+text-decoration:none;
+color:#333333;<br>
+}
+
+#cpanel div.recuadro a:hover {
+width:100px;
+height:100px;
+background-color:#F1E8E6;
+border:1px solid #C24733;
+color:#333333;
+}
+
+#cpanel div.recuadro span {
+display:block;
+padding-top:7px;
+}
+
+#cpanel div.recuadro img {
+margin-top:15px;
+}

@@ -1,0 +1,61 @@
+.modInferiorTitulo h1 {
+	height: 27px;
+	margin: 0;
+	width: 100%;
+}
+
+.modInferiorTitulo h1 a {
+	color:#929184;
+	float:right;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:x-small;
+	margin:7px 7px 7px 0;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+.modInferiorTitulo hr {
+	clear: both;
+}
+
+.notinferior {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:0.5em;
+	height:60px;
+	padding:10px;
+}
+
+.notinferior img {
+	float:left;
+	height:54px;
+	margin-bottom:5px;
+	margin-right:5px;
+	width:54px;
+}
+
+.notinferior div {
+	float:right;
+	width:220px;
+}
+
+.notinferior h3 {
+	color:#F57840;
+	margin:0;
+	text-transform:uppercase;
+}
+
+.notinferior h2 {
+	color:#586168;
+  	margin:0;
+}
+
+.notinferior p {
+	color:#C7C5AE;
+	font-size:1.3em;
+  	margin:0;
+}
+
+.notinferior a {
+	color: #080808;
+	text-decoration: none;
+}

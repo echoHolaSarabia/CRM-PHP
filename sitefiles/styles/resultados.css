@@ -1,0 +1,63 @@
+.rContModulo02{ width:990px;background:url(../img/bckModulo2.gif) top repeat-y; margin-top:10px; float:left;}
+.rContLeft{ width:660px; float:left;}
+
+.rUpampliar{ float:left;padding:0 10px 0 10px;}
+.rTamanoTexto{float:left;padding:1px 4px 0 0}
+.rTamanoLetra{float:right;padding:0 0 9px 0;font-family:Arial,Tahoma,Verdana;font-size:10px;color:#f26522;font-weight:bold}
+
+.rPunteado02{height:1px;background-image:url(../img/Punteado01.gif);background-repeat:repeat-x;font-size:0px; width:639px; margin:5px 0 10px 0; float:left;}
+.rPunteado03{height:1px;background-image:url(../img/Punteado01.gif);background-repeat:repeat-x;font-size:0px; width:639px; margin:5px 0 5px 0; float:left;}
+
+
+.rContform{margin:20px 0 0 0;float:left; width:640px; padding:0 10px 0 10px}
+.rTextosForm{float:left;font-family:Arial,Tahoma,Verdana;color:#808285;font-size:10px;font-weight:bold;padding:4px 0 0 0;}
+.rForm{float:right;}
+.rForm2{ float:right;width:555px;}
+
+.rForm input,.rForm textarea{font-family:Arial,Tahoma,Verdana;color:#3c3c3c;font-size:12px; border: 1px solid #d7d7d7; float:left;}
+.rForm input{width:518px;height:18px}
+
+
+.rdespl{width:520px;border: 1px solid #d7d7d7; float:left}
+.Hdespl1{width:320px;border: 1px solid #d7d7d7; float:left; margin:0 5px 0 0}
+.Hdespl2{width:100px;border: 1px solid #d7d7d7; float:left; margin:0 5px 0 0}
+.Hdespl3{width:85px;border: 1px solid #d7d7d7; float:left; margin:0 5px 0 0}
+
+.rImgB{padding:0 0 0px 0;}
+
+.rtitform{font-family: Georgia, "Times New Roman", Times, serif;color:#f26522;padding:0 0 5px 0; font-size:24px;}
+
+.rTitulo{font-family: Georgia, "Times New Roman", Times, serif;color:#4b6f8a;padding:0 0 10px 0; font-size:38px; width:400px; float:left;}
+.rCantRes{font-family:Arial,Tahoma,Verdana;color:#58595b;padding:0;font-size:18px; float:right; padding:15px 0 0 0;}
+.rContTitulo{ padding:0 10px 0 10px;}
+/*REGISTRO*/
+.rTitulo2{font-family: Georgia, "Times New Roman", Times, serif;color:#4b6f8a;padding:0 0 10px 0; font-size:38px;}
+.rEnviar{font-family:Arial,Tahoma,Verdana;color:#3c3c3c;font-size:12px;color:#4b6f8a;font-weight:bold;  float:right;}
+.rEnviar a{color:#4b6f8a; text-decoration:none}
+.rEnviar a:hover{color:#4b6f8a; text-decoration:none}
+
+/*///////*/
+
+
+.rTitulo1,.rTitulo2,.rTitulo3,.rTitulo4{font-family: Georgia, "Times New Roman", Times, serif;color:#4b6f8a;padding:0 0 10px 0;}
+.rTitulo1{font-size:18px}
+.rTitulo2{font-size:22px}
+.rTitulo3{font-size:26px}
+.rTitulo4{font-size:30px}
+
+
+.rDescripcion1,.rDescripcion2,.rDescripcion3,.rDescripcion4{font-family:Arial,Tahoma,Verdana;color:#58595b;padding:0 0 5px 0; font-weight:bold;}
+.rDescripcion1{font-size:8px}
+.rDescripcion2{font-size:10px}
+.rDescripcion3{font-size:14px}
+.rDescripcion4{font-size:28px}
+
+.rDescripcion1 span,.rDescripcion2 span,.rDescripcion3 span,.rDescripcion4 span{color:#f26522}
+
+
+.rNoticia1,.rNoticia2,.rNoticia3,.rNoticia4{font-family:Arial,Tahoma,Verdana;color:#58595b;padding:0;}
+.rNoticia1{font-size:10px}
+.rNoticia2{font-size:12px}
+.rNoticia3{font-size:18px}
+.rNoticia4{font-size:24px}
+

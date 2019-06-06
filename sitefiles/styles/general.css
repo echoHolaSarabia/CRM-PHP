@@ -1,0 +1,91 @@
+body{background:#373737;margin:0;padding:0}
+
+@font-face {
+font-family: Aliquam; /* nombre de la fuente */
+src: url("http://www.padelspain.net/fuentes/Aliquam.ttf"); /* ubicación de la fuente formato .otf */
+/*src: url(http://www.golfconfidencial.com/fuentes/myriad.ttf) format("truetype");*/ /* TTF file para CSS3 browsers */
+}
+
+@font-face {
+font-family: myriad pro; /* nombre de la fuente */
+src: url("http://www.golfconfidencial.com/fuentes/myriadpro-regular.otf"); /* ubicación de la fuente formato .otf */
+/*src: url(http://www.golfconfidencial.com/fuentes/myriad.ttf) format("truetype");*/ /* TTF file para CSS3 browsers */
+}
+
+@font-face {
+font-family: myriad pro semibold; /* nombre de la fuente */
+src: url(http://www.golfconfidencial.com/fuentes/myriadpro-semibold.otf); /* ubicación de la fuente formato .otf */
+}
+
+
+form{margin:0;padding:0}
+img{border:0}
+body>div{background:url(../img/bckSite.gif) top center repeat-y #373737;overflow:hidden}
+.gContenGeneral{width:990px}
+.gHeader{height:100px}
+.gAccesos1{background:url("/img/hd/hdBack.png") no-repeat scroll center center transparent;width:970px;font:700 10px Arial, Helvetica, sans-serif;color:#848c97;padding:0 9px}
+.gAccesos1 a{color:#848c97;text-decoration:none}
+.gAccesos1 a:hover{color:#339;text-decoration:none}
+.gAccesosR img{width:20px}
+.lastUpdate{ margin-top: 9px; }
+.gbannerH{height:100px;padding:10px 0 0}
+.gbannerH img{float:left;margin:0}
+.gbckHeader2{background:url('/img/finalArt/slogan_h70.png') no-repeat 0 50%;height:90px}
+.gReloj{font-family:Arial, Helvetica, sans-serif;font-size:40px;color:#9c9a8e;float:right;padding-right:10px;margin:45px 10px 0 0}
+.megabanner{height:90px;width:728px}
+.seccion_activa{font-weight:700;background:#FA8E1F;font-size:12px}
+.gContBotonera{background:#373737;clear:both;height:40px;width:970px;margin:10px auto 0}
+#nav{font:700 12px Arial,Helvetica,sans-serif;line-height:40px;list-style:none;overflow:hidden;text-transform:uppercase;white-space:nowrap;margin:0;padding:0}
+#nav li{background:#373737;border:0 1px;float:left;margin:0 0 0 2px}
+#nav li:first-child{margin:0 0 0 1px}
+#nav li:hover,#nav li.activa{background:#339}
+#nav a{color:#fff;display:block;text-decoration:none}
+#nav a span{display:block;text-align:center}
+.gSubbotonera{background:url("../img/bckSubbot.jpg");color:#FFF;font:700 10px Arial,Helvetica,sans-serif;overflow:hidden;margin:0 1em}
+.gSubbotonera ul{float:left;list-style:none;margin:0 1em 0 0;padding:0}
+.gSubbotonera li{float:left;line-height:29px}
+.gSubbotonera li.fyl{margin:0 0 0 1em}
+.gSubbotonera li a{border-left:1px solid;margin:0 0 0 1em;padding:0 0 0 1em}
+.gSubbotonera li:first-child a{border:0;margin:0;padding:0}
+.gSubbotonera li:first-child+li a{border:0;margin:0}
+.gSubbotonera a{color:#fff;text-decoration:none}
+.gSubbotonera a:hover,.gSubbotonera li.activa a{color:#bbbfc4;border-color:#FFF}
+.seccion{font-size:12px;color:#fff;font-weight:700}
+#li.seccion_activa{color:#FFF}
+#li.seccion{color:#AAA}
+.gContFooter{text-transform:uppercase}
+.gBotFooter{width:970px;height:22px;background:#596167;font:700 8px Arial, Helvetica, sans-serif;color:#FFF;float:left;margin:0 0 0 5px;padding:18px 0 0}
+.gBotFooter a{color:#d1d3d4;text-decoration:none}
+.gderechos{width:990px;font:700 8px Arial, Helvetica, sans-serif;color:#808285;text-transform:uppercase;margin-top:15px;float:left}
+.gderechos a{color:#6f7071;text-decoration:none}
+.gderechos a:hover{color:#4a4b4d;text-decoration:none}
+.gfooter{float:left;width:100%}
+.gContfooter{background:url(../img/footer.jpg) center no-repeat #373737;height:73px;width:990px}
+.gPublica{float:right;margin:40px 0 0}
+.gBckTitIncludes{width:300px;height:26px;background:url(../img/bckTitIncludes.jpg) no-repeat;border-bottom:1px solid #FFF}
+.gTxtTitIncludes{height:21px;font:700 10px Arial, Helvetica, sans-serif;color:#FFF;text-transform:uppercase;float:left;background:url(../img/bckTxtIncludes.jpg) no-repeat;padding:5px 0 0 5px}
+.gEnRenglonItem{height:26px;background:url(../img/bckRenglonE.jpg) no-repeat;font:12px Arial, Helvetica, sans-serif;color:#636363;font-style:italic;padding:0 0 0 10px}
+.gEnTodas{height:21px;background:url(../img/bckMasEncuestas.jpg) no-repeat;font:700 10px Arial, Helvetica, sans-serif;color:#FFF;padding:5px 0 0}
+.gEnTodas a:hover{color:#c6c5c1;text-decoration:none}
+.gEntRenglonTit img{border:1px solid #dad9d1;float:left;margin:0 10px 0 0;padding:2px; max-width:100%;}
+.gEntTit{font:18px Georgia, "Times New Roman", Times, serif;color:#6b6959;padding: 10px 0 10px;float:left; width:100%;}
+.gEntTit01{font:700 10px Arial, Helvetica, sans-serif;color:#596167}
+.gEntTxt{font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#636363;padding:5px 0 0}
+.gRenglonMasA{height:20px;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#636363;background:url(../img/bckRenglonMasA.jpg) no-repeat;padding:5px 0 0 5px}
+.gRenglonMasB{height:20px;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#636363;background:url(../img/bckRenglonMasB.jpg) no-repeat;padding:5px 0 0 5px}
+#botonera{width:970px;margin:0;padding:0}
+#botonera li{background:#373737;display:block;float:left;height:2.4em;text-decoration:none;position:relative;margin:0;padding:1em 23.5px 0}
+#botonera li a{color:#FFF;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase}
+#botonera li:hover ul{display:block;position:absolute;width:970px;top:-50px;left:0;margin:0;padding:0}
+#botonera li:hover ul li{background:#858B97;float:left;height:17px;border-right:1px solid #858B97;color:#fff;display:block;font-size:12px;font-weight:700;text-decoration:none;padding:0 10px}
+#videoObject{border:1px solid #E5E5E5;width:300px;padding:4px}
+#videoObject h1{background:url('/img/titulo_tv.jpg');color:#339;font:700 1.5em/40px Georgia,"Times New Roman",Times,serif;margin:0 0 4px;padding:0 0 0 2em}
+.gfloatLeft,.gAccesosL,#container>table,.logo,.gFila,.gPuntaIncludes{float:left}
+.gfloatRight,.gAccesosR{float:right}
+.subseccion,.subseccion_activa{display:none}
+.gBotFooter a:hover,.gEnTodas a{color:#FFF;text-decoration:none}
+.gContIncludes,.gContPublicedades{width:300px;border:1px solid #e5e5e5;margin:0 0 10px;padding:4px}
+.gEnRenglonTit,.gEntRenglonTit{background:url(../img/bckTitEncuestas.jpg) top repeat-y;font:18px Georgia, "Times New Roman", Times, serif;color:#6b6959;padding:10px}
+.gRenglonMasA img,.gRenglonMasB img{float:left;margin:0 5px}
+.gRenglonMasA a,.gRenglonMasB a{color:#636363;text-decoration:none}
+.gRenglonMasA a:hover,.gRenglonMasB a:hover{color:#3a3a3a;text-decoration:none}

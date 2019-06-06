@@ -1,0 +1,104 @@
+<?php
+include("modulos/mod_rosas/conf.php");
+if (isset($_GET['id']) && $_GET['id'] != "") {// MODIFICAR
+  $r = mysql_query("SELECT * FROM modulosrosas WHERE id=" . $_GET['id']);
+  $rosa = mysql_fetch_array($r);
+  $accion = "update&id=" . $rosa['id'];
+} else {// INSERTAR
+  $accion = "insert";
+}
+?>
+<tr>
+  <td width="100%">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="botonera" align="right">
+          <table border="0" cellpadding="0" cellspacing="0" >
+            <tr>
+              <td class="botones_botonera"><a href="javascript:document.form_rosas.submit();" class="enlaces_botones_botonera"><img src="images/guardar.png" border="0"><br />Guardar</a></td>
+              <td class="botones_botonera"><a href="index2.php?modulo=<?php echo MODULO ?>" class="enlaces_botones_botonera"><img src="images/eliminar.png" border="0"><br />Cancelar</a></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="buscador"><span class="titulo_seccion"><?php if ($accion == "insert")
+  echo "Nuevo ";else
+  echo "Editar "; ?> módulo</span></td>
+      </tr>
+      <tr>
+        <td>
+          <form name="form_rosas" method="post" action="?modulo=<?php echo MODULO ?>&fns=1&accion=<?php echo $accion ?>">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+              <tr>
+                <td class="titulos" colspan="2">Detalles</td>
+              </tr>
+              <tr>
+                <td class="separador" colspan="2"></td>
+              </tr>
+              <tr>
+                <td class="contenido">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td class="etiqueta_200px">Nombre del modulo:</td>
+                      <td><input type="text" name="titulo" value="<?php echo (isset($rosa)) ? $rosa['titulo'] : ""; ?>" style="width:300px;"/></td>
+                    </tr>
+                    <tr>
+                      <td class="separador" colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td class="etiqueta_200px">Tipo de módulo:</td>
+                      <td>
+                        <select name="tipo">
+                          <option value="banner" <?php echo (isset($rosa) && $rosa['tipo'] == "banner") ? "selected" : ""; ?>>Banner</option>
+                          <option value="otros" <?php echo (isset($rosa) && $rosa['tipo'] == "otros") ? "selected" : ""; ?>>Otros</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="separador" colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td class="etiqueta_200px">Fuente:</td>
+                      <td>
+                        <script>
+                          function selecciona_fuente(tipo){
+                            if (tipo == "ruta"){
+                              document.getElementById('codigo').disabled = true;
+                              document.getElementById('ruta_archivo').disabled = false;
+                            }else if (tipo == "codigo"){
+                              document.getElementById('codigo').disabled = false;
+                              document.getElementById('ruta_archivo').disabled = true;
+                            }
+                          }
+                        </script>
+                        <select onchange="selecciona_fuente(this.value)">
+                          <option value="ruta">Archivo</option>
+                          <option value="codigo">Código</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="separador" colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td class="etiqueta_200px">Ruta del archivo:</td>
+                      <td><input type="text" name="ruta_archivo" id="ruta_archivo" value="<?php echo (isset($rosa)) ? $rosa['ruta_archivo'] : ""; ?>" style="width:300px;"/></td>
+                    </tr>
+                    <tr>
+                      <td class="separador" colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td class="etiqueta_200px">Código:</td>
+                      <td><textarea name="codigo" id="codigo" style="width:300px;"><?php echo (isset($rosa)) ? $rosa['codigo'] : ""; ?></textarea></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

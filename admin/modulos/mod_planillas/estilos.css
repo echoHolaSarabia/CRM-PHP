@@ -1,0 +1,34 @@
+.barra_titulo_botones{width:100%;height:50px;border-bottom:1px solid #000}
+.barra_titulo_botones p{font-size:20px;font-weight:bold;}
+.tabla_columnas{float:left;width:650px;}
+.tabla_posibles{float:left;width:25%;}
+.rotador{float:left;width:620px;background-color:#FFF;border:1px solid #CCC;margin-left:10px;}
+.columna1{float:left;width:200px;background-color:#FFF;border:1px solid #CCC;margin-left:10px;}
+.columna2{float:left;width:200px;background-color:#FFF;border:1px solid #CCC;margin-left:10px;}
+.columna3{float:left;width:200px;background-color:#FFF;border:1px solid #CCC;margin-left:10px;}
+.columna4{float:left;width:410px;background-color:#FFF;border:1px solid #CCC;margin-left:10px;margin-top:10px;}
+.columna5{float:left;width:410px;background-color:#FFF;border:1px solid #CCC;margin-left:220px;margin-top:10px;}
+.columna6{float:left;width:620px;background-color:#FFF;border:1px solid #CCC;margin-left:10px;margin-top:10px;}
+.columna1 h2{text-align:center;margin-top:0px;font-size:16px}
+.columna2 h2{text-align:center;margin-top:0px;font-size:16px}
+.columna3 h2{text-align:center;margin-top:0px;font-size:16px}
+.columna4 h2{text-align:center;margin-top:0px;font-size:16px}
+.columna5 h2{text-align:center;margin-top:0px;font-size:16px}
+.columna6 h2{text-align:center;margin-top:0px;font-size:16px}
+.columna1 ul{list-style-type:none;padding-left:0px;padding-top:5px;margin-left:0px}
+.columna2 ul{list-style-type:none;padding-left:0px;padding-top:5px;margin-left:0px}
+.columna3 ul{list-style-type:none;padding-left:0px;padding-top:5px;margin-left:0px}
+.columna4 ul{list-style-type:none;padding-left:0px;padding-top:5px;margin-left:0px}
+.columna5 ul{list-style-type:none;padding-left:0px;padding-top:5px;margin-left:0px}
+.columna6 ul{list-style-type:none;padding-left:0px;padding-top:5px;margin-left:0px}
+.pestania_off{cursor:pointer;background-color:#042B3F;width:70px;height:25px;color:#FFF;text-align:center}
+.pestania_off:hover {background-color:#D1E5EF;color:#000000}
+.pestania_on{cursor:pointer;background-color:#D1E5EF;width:70px;height:25px;color:#000000;text-align:center}
+.salto{clear:both}
+.ui-sortable-placeholder {list-style-type:none;border: 2px dotted #9F9F9F; visibility: visible !important;background-color:#DFDFDF;width:auto}
+.recuadro-titulos{border:1px solid #3F3F3F;height:30px;cursor:pointer;font-size:14px;padding-left:10px;background-color:#DDD}
+#banners_planificables{margin-left:0px}
+
+.titulo{font-size:12px;font-weight:bold}
+.descripcion{display:none;}
+.hueco_ampliada{float:left;width:100%;background-color:#FFF;border:1px solid #CCC;margin-left:0px}

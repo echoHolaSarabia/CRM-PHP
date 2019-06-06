@@ -1,0 +1,203 @@
+<?php
+require('clases/pagination.class.php');
+
+//Parámetros necesarios para construir la consulta
+if (isset($_GET['page']) && $_GET['page'] != "")
+	$page = $_GET['page'];
+else $page = 1;
+
+if (isset($_GET['suscriptor']) && $_GET['suscriptor'] != "")
+	$q = $_GET['suscriptor'];
+else $q = "";
+
+$busqueda = $q;
+
+$items = 20;
+$sqlStr = "";
+$sqlStrAux = "";
+$limit = "";
+if (isset($_GET['orden']) && $_GET['orden'] != ""){
+	$orden = $_GET['orden'];
+	$tipo_orden = $_GET['tipo_orden'];
+} else {
+	$orden = "id";
+	$tipo_orden = "DESC";
+}
+
+if (isset($_GET['tipo_newsletter']) && $_GET['tipo_newsletter'] != ""){
+	$tipo_newsletter = $_GET['tipo_newsletter'];
+} else {
+	$tipo_newsletter = "";
+}
+
+$funciones = new Funciones;
+$funciones->get_suscriptores($page,$items,$q,$sqlStr,$sqlStrAux,$limit,$orden,$tipo_orden,$tipo_newsletter);
+
+
+$r=mysql_query($sqlStrAux);
+$aux = mysql_fetch_assoc($r);
+$query = mysql_query($sqlStr.$limit);
+?>
+<script type="text/javascript" language="javascript">
+function popup () {
+	window.open("modulos/mod_suscriptores/listado_suscriptores.php","Preview","width=800,height=600,toolbar=no,directories=no,menubar=no,status=no,scrolling=yes");
+}
+</script>
+<script src="scripts/buscador.js" type="text/javascript" language="javascript"></script>
+<tr>
+	<td width="100%">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      	<tr>
+          <td class="botonera" align="right">
+          	<table border="0" cellpadding="0" cellspacing="0" >
+      		  <tr>
+
+                <td class="botones_botonera"><a href="index2.php?modulo=mod_suscriptores&accion=nuevo" class="enlaces_botones_botonera"><br /><img src="images/nuevo.png" border="0"><br />Nuevos</a></td>
+                <td class="botones_botonera"><a href="javascript:haz_submit('form_listado_seleccion','index2.php?modulo=mod_suscriptores&fns=1&accion=delete');" class="enlaces_botones_botonera"><br /><img src="images/eliminar.png" border="0"><br />Borrar</a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          	<table border="0" width="100%">
+          	  <tr>
+          	  	<td class="buscador"><span class="titulo_seccion">Listado de suscriptores</span></td>
+          	  	<td align="right">
+          	  	  <table border="0">
+          	  	    <tr>
+          	  	      <td align="left">
+		          	  			<form action="index2.php" method="GET" >
+		          	  		   email:&nbsp;<input type="texr" name="suscriptor" value="" size="50"><br>
+		          	  		   <input type="hidden" name="modulo" value="mod_suscriptores">
+		          	  		   <label>Tipo newsletter:</label>
+		          	  		   <select name="tipo_newsletter">
+		          	  		   	<option value="">Todas</option>
+							     <option value="n_1">Newsletter</option>
+							     <?/*<option value="n_2">Aquí España</option>
+							     <option value="n_3">Club FEHR</option>
+							     <option value="n_4">Confidencial</option>
+							     */?>
+							   </select>
+							   <br>
+											   <label>Ordenar por:</label>
+											   <select name="orden">
+											     <option value="email">email</option>
+											   </select>
+											   
+											   <label> orden:</label>
+											   <select name="tipo_orden">
+											     <option value="ASC">Ascendente</option>
+											     <option value="DESC">Descendente</option>
+											   </select>
+											   <input type="submit" value="Buscar" id="search">
+											 	</form>
+	          	  	  	</td>
+          	  	    </tr>
+          	  	  </table>
+          	  	</td>
+          	  </tr>
+          	</table>
+          </td>
+        </tr>
+        <tr>
+          <td class="contenido">
+          <form name="form_listado_seleccion" method="post" action="">
+	          <div id="resultados">
+				<p>
+				  <?php
+				  // Indica cuantos registros se mustran en total en todas la páginas
+					if($aux['total'] and isset($busqueda)){
+							echo "{$aux['total']} Resultado".($aux['total']>1?'s':'')." que coinciden con tu b&uacute;squeda \"<strong>$busqueda</strong>\".";
+						}elseif($aux['total'] and !isset($q)){
+							echo "Total de registros: {$aux['total']}";
+						}elseif(!$aux['total'] and isset($q)){
+							echo"No hay registros que coincidan con tu b&uacute;squeda \"<strong>$busqueda</strong>\"";
+						}
+				  ?>
+				</p>
+				<?php 
+					if($aux['total']>0){
+						$p = new pagination;
+						$p->Items($aux['total']);
+						$p->limit($items);
+						if(isset($q))
+								$p->target("index2.php?modulo=mod_suscriptores&q=".urlencode($q));
+						else if (isset($orden) && isset($tipo_orden))
+								 $p->target("index2.php?modulo=mod_suscriptores&orden=".$orden."&tipo_orden=".$tipo_orden);
+							 else $p->target("index2.php?modulo=mod_suscriptores");						 	  								
+						$p->currentPage($page);
+				?>
+							<div class="titulos">
+				                <div class="casilla_listado" style="width:2%">Id</div>
+				                <div class="casilla_listado" style="width:2%"><input type="checkbox" name="seleccion" onclick="checkAll('<?=($aux['total']+1)?>');" /></div>
+				                <div class="casilla_listado" style="width:50%">email</div>
+				                <div class="casilla_listado"  style="width:9%;text-align:center">Newsletter  </div>
+				                <?/*
+				                <div class="casilla_listado" style="width:9%;text-align:center">Aquí España | </div>
+				                <div class="casilla_listado" style="width:9%;text-align:center">Club FEHR | </div>
+				                <div class="casilla_listado" style="width:9%;text-align:center">Confidencial</div>
+				                */?>
+				                <div class="casilla_listado" style="width:10%;text-align:right">Editar</div>
+				            </div>
+				            <div id="grupo_secciones" class="seccion" style="width:100%;">
+				<?
+						$r = 0;
+						$num_fila = 0;
+						while($suscriptor = mysql_fetch_assoc($query)){
+							$num_fila ++;
+							$datos_noticia = get_elemento_de_tabla ("suscriptores",$suscriptor['id']);
+							$estilo = ($suscriptor['activo'] == 0) ? "background-color:#FFAFAF" : "";
+				?>
+					        <div id="seccion_<?=$newsletter['id']?>" class="<? echo (($num_fila % 2) == 0) ? "fila_par" : "fila_impar"; ?>">
+			                  <div style="float:left;width:100%;<?=$estilo?>">
+			                    <div class="casilla_listado" style="width:2%"><?=$suscriptor['id']?></div>
+			                    <div class="casilla_listado" style="width:2%"><input type="checkbox" name="seleccion<?=$num_fila;?>" value="<?=$suscriptor['id']?>" /></div>
+			                    <div class="casilla_listado"  style="width:50%"><strong><?=htmlentities($suscriptor['email'])?></strong></div>
+			                    <div class="casilla_listado" style="width:9%;text-align:center" >
+			                    	<? 
+			                    	if (isset($suscriptor) && $suscriptor['n_1'] == 0) 
+			                    		echo "<a href='?modulo=mod_suscriptores&accion=estado&campo=n_1&fns=1&id=".$suscriptor['id']."&page=".$page."'><img src='images/cross.png' border='0'/></a>"; 
+			                    	else echo "<a href='?modulo=mod_suscriptores&accion=estado&campo=n_1&fns=1&id=".$suscriptor['id']."&page=".$page."'><img src='images/tick.png' border='0'/></a>";
+			                    	?>
+			                    </div>
+			                    <?/*
+			                    <div class="casilla_listado" style="width:9%;text-align:center">
+			                    	<? 
+			                    	if (isset($suscriptor) && $suscriptor['n_2'] == 0) 
+			                    		echo "<a href='?modulo=mod_suscriptores&accion=estado&campo=n_2&fns=1&id=".$suscriptor['id']."&page=".$page."'><img src='images/cross.png' border='0'/></a>"; 
+			                    	else echo "<a href='?modulo=mod_suscriptores&accion=estado&campo=n_2&fns=1&id=".$suscriptor['id']."&page=".$page."'><img src='images/tick.png' border='0'/></a>";
+			                    	?>
+			                    </div>
+			                    <div class="casilla_listado" style="width:9%;text-align:center">
+			                    	<? 
+			                    	if (isset($suscriptor) && $suscriptor['n_3'] == 0) 
+			                    		echo "<a href='?modulo=mod_suscriptores&accion=estado&campo=n_3&fns=1&id=".$suscriptor['id']."&page=".$page."'><img src='images/cross.png' border='0'/></a>"; 
+			                    	else echo "<a href='?modulo=mod_suscriptores&accion=estado&campo=n_3&fns=1&id=".$suscriptor['id']."&page=".$page."'><img src='images/tick.png' border='0'/></a>";
+			                    	?>
+			                    </div>
+			                    <div class="casilla_listado" style="width:9%;text-align:center">
+			                    	<? 
+			                    	if (isset($suscriptor) && $suscriptor['n_4'] == 0) 
+			                    		echo "<a href='?modulo=mod_suscriptores&accion=estado&campo=n_4&fns=1&id=".$suscriptor['id']."&page=".$page."'><img src='images/cross.png' border='0'/></a>"; 
+			                    	else echo "<a href='?modulo=mod_suscriptores&accion=estado&campo=n_4&fns=1&id=".$suscriptor['id']."&page=".$page."'><img src='images/tick.png' border='0'/></a>";
+			                    	?>
+			                    </div>
+			                    */?>
+			                    <div class="casilla_listado" style="width:10%;text-align:right"><a href="?modulo=mod_suscriptores&accion=editar&id=<?=$suscriptor['id']?>"><img src="images/page_edit.png" alt="Editar" title="Editar" border="0" /></a></div>
+			                  </div>
+			                </div>			                
+			    <?
+			      		if($r%2==0)++$r;else--$r;
+			        	}
+			        echo "<div style='width:50px'>&nbsp</div>";
+					$p->show();
+					}
+				?>
+			  </div>
+		  </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+</tr>
